@@ -1,8 +1,8 @@
-# kind: "CDN"
-# version: "1"
-# metadata:
-#   envTypes: ["dev"]
-# data:
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
 #   trafficFilters:
 #     rules:
 #       - name: block-xss
