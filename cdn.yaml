@@ -25,13 +25,13 @@ data:
           exists: true
         action:
           type: block
-      - name: "block-chrome"
+      - name: "block-curl"
         when:
           allOf:
             - reqProperty: path
-              equals: /block-chrome
+              equals: /us/en/faqs.html
             - reqHeader: user-agent
-              matches: ".*Chrome.*"
+              matches: ".*curl.*"
         action:
           type: block
       - name: limit-requests-client-ip
@@ -39,8 +39,8 @@ data:
           reqProperty: tier
           equals: "publish"
         rateLimit:
-          limit: 60
-          window: 10
+          limit: 50
+          window: 1
           penalty: 60
           groupBy:
             - reqProperty: clientIp
