@@ -4,11 +4,11 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
-    rules:
-      - name: block-xss
-        when:
-          reqProperty: tier
-          equals: "publish"
+    rules: []
+      - namsdfe: block-xss
+        wdsfhen:
+          reqfdProperty: tier
+          eqsdfuals: "publish"
         action:
           type: block
           wafFlags:
