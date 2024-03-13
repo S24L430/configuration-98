@@ -4,7 +4,7 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
-    rules: []
+    rules:
       - namsdfe: block-xss
         wdsfhen:
           reqfdProperty: tier
